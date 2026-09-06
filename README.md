@@ -99,7 +99,17 @@ This systems foundation supports my broader interest in secure distributed compu
 
 ## Demonstration
 
-Execution screenshots will document successful system-call invocation and kernel-module loading/unloading without publishing graded solution source.
+### Custom System Call
+
+The userspace test invokes the custom x86-64 system call and verifies successful execution through the kernel log.
+
+![Custom system call execution](images/syscall-demo.png)
+
+### Loadable Kernel Module
+
+The module is loaded with runtime parameters, executes initialization code in kernel space, and is subsequently unloaded with its cleanup path verified through the kernel log.
+
+![Loadable kernel module execution](images/module-demo.png)
 
 ## Next Steps
 
